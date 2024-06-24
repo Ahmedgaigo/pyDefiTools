@@ -29,14 +29,3 @@ def borrow_from_aave(token, amount, user_address):
     # Placeholder for actual borrowing logic
     return f"Borrowed {amount} of {token} from Aave for user {user_address}"
 
-
-# Example usage
-if __name__ == "__main__":
-    market_data = get_aave_market_data()
-    if market_data:
-        print("Aave Market Data:", market_data)
-    else:
-        print("Failed to fetch Aave market data.")
-
-    print(lend_on_aave("DAI", 1000, "0xYourEthereumAddress"))
-    print(borrow_from_aave("ETH", 0.5, "0xYourEthereumAddress"))
